@@ -93,7 +93,7 @@ class Car(Document):
 try:
     connect(
         db='CarParkDB',
-        host="mongodb+srv://glsavvick:salakek2005.@cluster0-oj2fr.mongodb.net/CarParkDB"
+        host="mongodb+srv://USERNAME:PASSWORD.@cluster0-oj2fr.mongodb.net/CarParkDB"
     )
     print("Connection successful")
 except Exception as e:
