@@ -45,8 +45,8 @@ def clicked():
     _days = int(_diff.days)
     _hours = int(_diff.seconds // (60 * 60))
     _new_price = 6 + (_days * 100 + _hours * 6)
-    exit_label.configure(text=_dt_string)
-    price_label.configure(text=_new_price)
+    exl_res.configure(text=_dt_string)
+    pl_res.configure(text=_new_price)
     Car.objects(plate_number=_plate).update(exit=now, price=_new_price)
 
 
